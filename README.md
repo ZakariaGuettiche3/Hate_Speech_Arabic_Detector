@@ -54,5 +54,14 @@ Integrate multilingual support (e.g., English, French)
 
 Add user reporting and moderation system
 
-
 Deploy full-stack app with CI/CD and cloud hosting
+
+## NB:
+The trained model files are stored in the following paths:
+
+Backend/mon_projet/elearning/model.pth — main classifier model
+
+Backend/mon_projet/elearning/Category_model.pth — category classifier model
+
+Due to GitHub’s file size limits (100MB), these .pth files are managed with Git LFS.
+To use them, make sure Git LFS is installed on your machine
