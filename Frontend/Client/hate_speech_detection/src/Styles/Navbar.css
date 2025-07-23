@@ -1,0 +1,196 @@
+/* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 0.8rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links li a:hover {
+    color: #00bcd4;
+  }
+   */
+
+   /* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:#398399;  */
+    background-color:#55a3ba; 
+    padding: 1rem 2.5rem;
+    position: fixed;
+    /* min-width: 100vw; */
+    max-width: 100%;
+    /* margin-left: 2px;
+    margin-right: 2px; */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(8px); /* Flou amélioré pour le style "glassmorphism" */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère pour ajouter de la profondeur */
+    /* border-radius: 15px; Coins arrondis */
+    transition: all 0.3s ease-in-out;
+    height: 73px;
+  }
+  
+  .navbar:hover {
+    backdrop-filter: blur(15px); /* Effet de flou lorsqu'on survole la navbar */
+  }
+
+
+  .navbar-logo{
+    margin-left: 20px;
+    border-radius: 100%;
+    background-color: white;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 62px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-logo img:hover {
+    transform: scale(1.05); /* Animation d'agrandissement au survol */
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espacement plus large */
+    margin: 0;
+    margin-right: 30px;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600; /* Police plus épaisse */
+    font-size: 1.1rem; /* Taille de police légèrement plus grande */
+    text-transform: uppercase; /* Majuscules pour un look moderne */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition fluide */
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+  
+  .navbar-links li a:hover {
+    color: #00bcd4; /* Couleur de survol */
+    background-color: rgba(0, 188, 212, 0.1); /* Fond au survol avec une légère opacité */
+    transform: translateY(-4px); /* Léger mouvement au survol */
+  }
+  
+  .navbar-links li a:active {
+    transform: translateY(1px); /* Petit effet de pression */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .navbar-logo img {
+      height: 40px; /* Logo plus petit sur mobile */
+    }
+  }
+  
+  
+.account-bar-container {
+  height: 2.4rem;
+  width: fit-content;
+  min-width: 150px;
+  /* padding-inline: 20px; */
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  border: 1.5px solid white;
+  transition: .1s ease-in;
+  position: absolute;
+  right: 25px;
+
+}
+
+.account-bar {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #398399;
+  color: white;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.profile-img-bar {
+
+  height: 100%;
+  width: 35px;
+  border-radius: 100%;
+
+}
+
+.username-bar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: baseline;
+  gap: 4px;
+  padding-inline: 10px;
+  font-size: .9em;
+  color: white;
+  font-weight: 500;
+  position: relative;
+
+}
+
+.nav-login{
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 15px;
+
+}
+.nav-login p {
+  color: #398399;
+  font-size: 15px;
+  font-weight: 600;
+
+}

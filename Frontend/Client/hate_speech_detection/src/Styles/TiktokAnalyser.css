@@ -1,0 +1,359 @@
+.tiktok-analyzer-container {
+
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 2rem auto;
+  min-width: 700px;
+  margin-top: 115px;
+  display: flex
+;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .input {
+    width: 95%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .analyze-button {
+    width: 95%;
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .analyze-button:hover {
+    background-color: #222;
+  }
+  
+  .result-box {
+    background: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .result-box h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+
+
+  .tiktok-analyzer-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    max-width: 750px;
+    margin: 2rem auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .input {
+    width: 90%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .analyze-button {
+    width: 90%;
+    background-color: #000;
+    /* background: linear-gradient(135deg, #6c5ce7, #341f97); */
+    /* background: linear-gradient(135deg, #73cbe5, #146076); */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-bottom: 20px;
+  }
+  
+  .analyze-button:hover {
+    background-color: #222;
+  }
+  
+  .analyser-guidelines {
+    background: #eef7fb;
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  
+  .analyser-guidelines h4 {
+    margin-bottom: 10px;
+  }
+  
+  .result-section {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .progress-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#ff4c4c 0deg, #e0e0e0 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .summary {
+    margin-bottom: 20px;
+  }
+  
+  .details-button {
+    background-color: #1d85a4;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .details-button:hover {
+    background-color: #0052cc;
+  }
+  
+  .details-table {
+    margin-top: 20px;
+    overflow-x: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  
+  .details-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .details-table th,
+  .details-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .details-table th {
+    background-color: #f4f4f4;
+    background-color: #c7eaf4;
+    font-weight: bold;
+  }
+  
+  
+
+
+   body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .lux-analyzer-container {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(14px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .lux-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #2d3436;
+  }
+  
+  .lux-input {
+    width: 90%;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border: 1px solid #dfe6e9;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .lux-input:focus {
+    border-color: #6c5ce7;
+    outline: none;
+  }
+  
+  .lux-button {
+    width: 90%;
+    background: linear-gradient(135deg, #6c5ce7, #341f97);
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  .lux-button:hover {
+    background: linear-gradient(135deg, #5f27cd, #341f97);
+  }
+  
+  .lux-guidelines {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 14px;
+    color: #636e72;
+  }
+  
+  .progress-bar {
+    width: 90%;
+    background: #dfe6e9;
+    height: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  
+  .progress-fill {
+    background: linear-gradient(90deg, #6c5ce7, #00cec9);
+    height: 100%;
+    transition: width 0.4s ease;
+  }
+  
+  .lux-result {
+    margin-top: 40px;
+  }
+  
+  .lux-circle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .lux-progress-circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: conic-gradient(#6c5ce7 0deg, #dfe6e9 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lux-circle-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2d3436;
+  }
+  
+  .lux-summary p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #2d3436;
+  }
+  
+  .lux-details-button {
+    background: #00cec9;
+    padding: 10px 24px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .lux-details-button:hover {
+    background: #009688;
+  }
+  
+  .lux-table-wrapper {
+    margin-top: 25px;
+    overflow-x: auto;
+  }
+  
+  .lux-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .lux-table th, .lux-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #ecf0f1;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .lux-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .lux-table th {
+    background: #6c5ce7;
+    color: white;
+  }
+  

@@ -1,0 +1,521 @@
+/* .analyser-container {
+    background: #f2f2f2;
+    padding: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .text-area {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 10px;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  .analyse-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 22px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  }
+  
+  .analyse-btn:hover {
+    background: #0069d9;
+  }
+  
+  .reset-btn {
+    background: #ff4d4f;
+    color: white;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+  
+  .reset-btn:hover {
+    background: #d9363e;
+  }
+  
+  .char-count {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .result-box.hate {
+    background: #ffe5e5;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+  }
+  
+  .result-box.normal {
+    background: #e5ffe5;
+    color: #006600;
+    border: 2px solid #006600;
+  }
+  
+  .tips-box {
+    background: #fff;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-left: 5px solid #007bff;
+    border-radius: 10px;
+  }
+  
+  .tips-box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .tips-box ul {
+    padding-left: 20px;
+    color: #555;
+  }
+   */
+
+   .analyser-container {
+    /* margin-top: 60px;
+    max-width: 800px;
+    min-width: 700px;
+    margin: 40px 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", sans-serif; */
+    
+    margin-top: 60px;
+    max-width: 800px;
+    display: flex
+;
+    min-width: 700px;
+    margin: 40px 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", sans-serif;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .analyser-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .analyser-description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .analyser-textarea {
+    width: 95%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+    direction: ltr;
+  }
+  
+  .analyser-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .analyser-button, .keyboard-toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    /* background-color: #398399; */
+    background-color: #55a3ba;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  .analyser-button{
+    width: 95%;
+  }
+  
+  .analyser-button:hover, .keyboard-toggle:hover {
+    background-color: #0056b3;
+  }
+  
+  .arabic-keyboard {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .key, .delete-key {
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .key:hover, .delete-key:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .prediction-box {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  .prediction-box.hate {
+    background-color: #ff4d4d;
+  }
+  
+  .prediction-box.normal {
+    background-color: #4caf50;
+  }
+  
+  .analyser-guidelines {
+    margin-top: 30px;
+    background-color: #dff8ffb0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 95%;
+  }
+  
+  .analyser-guidelines h4{
+    margin-left: 10px;
+  }
+
+  .analyser-guidelines ul {
+    margin-top: 10px;
+    gap: 8px;
+    padding-left: 20px;
+    list-style-type: disc;
+    display: flex
+;
+    color: #444;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .circle-percentage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    background: conic-gradient(#27ae60 0%, #ccc 0%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .percentage-text {
+    color: #fff;
+  }
+
+  .analyser-section{
+    padding-top: 60px;
+    padding-right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;;
+    /* overflow-y: scroll */
+
+
+  }
+  
+
+.analyser-container {
+    /* margin-top: 60px;
+    max-width: 800px;
+    min-width: 700px;
+    margin: 40px 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", sans-serif; */
+    
+    margin-top: 60px;
+    max-width: 800px;
+    display: flex
+;
+    min-width: 700px;
+    margin: 40px 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", sans-serif;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .analyser-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .analyser-description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .analyser-textarea {
+    width: 95%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+    direction: ltr;
+  }
+  
+  .analyser-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .analyser-button, .keyboard-toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    /* background-color: #398399; */
+    background-color: #55a3ba;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  .analyser-button{
+    width: 95%;
+  }
+  
+  .analyser-button:hover, .keyboard-toggle:hover {
+    background-color: #0056b3;
+  }
+  
+  .arabic-keyboard {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .key, .delete-key {
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .key:hover, .delete-key:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .prediction-box {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  .prediction-box.hate {
+    background-color: #ff4d4d;
+    width: 55%;
+    background-color: #ff4d4d;
+  }
+  
+  .prediction-box.normal {
+    background-color: #4caf50;
+  }
+  
+  .analyser-guidelines {
+    margin-top: 30px;
+    background-color: #dff8ffb0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 95%;
+  }
+  
+  .analyser-guidelines h4{
+    margin-left: 10px;
+  }
+
+  .analyser-guidelines ul {
+    margin-top: 10px;
+    gap: 8px;
+    padding-left: 20px;
+    list-style-type: disc;
+    display: flex
+;
+    color: #444;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .circle-percentage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    background: conic-gradient(#27ae60 0%, #ccc 0%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .percentage-text {
+    color: #fff;
+  }
+
+  .analyser-section{
+    padding-top: 60px;
+    padding-right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;;
+    /* overflow-y: scroll */
+  }
+
+  .hate-type {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #f39c12;
+  }
+
+
+.hate-type-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    margin-top: 12px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #9b59b6; /* Couleur par défaut */
+    animation: fadeIn 0.6s ease;
+    gap: 8px;
+  }
+  
+  .hate-type-badge.gender { background-color: #8e44ad; }
+  .hate-type-badge.violence { background-color: #e74c3c; }
+  .hate-type-badge.physical_disability { background-color: #3498db; }
+  .hate-type-badge.religion { background-color: #27ae60; }
+  .hate-type-badge.politics { background-color: #e67e22; }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

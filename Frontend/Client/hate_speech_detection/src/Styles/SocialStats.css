@@ -1,0 +1,337 @@
+.dash-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.dash-sidebar{
+    width: 15%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
+    
+}
+
+.dash-sidebar-list{
+    display: none;
+}
+.dash-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    width: 85%;
+    /* background-color: #e4e4e4; */
+    background-color: #F5F5F5;
+    padding-inline: 40px;
+    min-height: 100vh;
+    overflow:hidden;
+    overflow-y: scroll;
+    /* border-bottom-left-radius: 30px; */
+    border: none;
+    border-top-left-radius: 30px;
+}
+
+.navbar_tyt {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    width: 95%;
+    /* padding: 10px; */
+    height: 40px;
+    /* margin-inline: 50px; */
+    /* background-color: white; */
+    /* background-color: #e4e4e4; */
+    background-color: #F5F5F5;
+
+    /* border-bottom: 2px solid #ddd; */
+    border-radius: 5px;
+    /* border:2px solid #c9c9c9;
+    border-left:1px solid #c9c9c9; */
+    /* padding-right: 30px;
+    padding-left: 30px; */
+    margin-top: 100px;
+    /* margin-top: 20px; */
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: fit-content;
+    border:2px solid #c9c9c9;
+    border-radius: 5px;
+    border-left:1px solid #c9c9c9;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 100%;
+    font-size: 16px;
+    width: 180px;
+    /* color: #555; */
+    transition: 0.2s;
+    background-color: white;
+    border: none;
+    border-left: 2px solid #c9c9c9;
+    
+    /* border-right: 1px solid ; */
+}
+
+.tab:hover {
+
+    background-color: #e8e8e8;
+}
+
+
+
+.tab.active {
+    font-weight: bold;
+    color: #007bff;
+    border: 1px solid #007bff;
+
+}
+
+.dropdown {
+    position: relative;
+    margin-left: auto;
+}
+
+.dropbtn {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f7f7f7;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 200px;
+}
+
+.content {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.box {
+    
+    flex: 1 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+    min-height: 150px;
+    display: flex
+;
+    transition: 0.3s ease;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.box h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.dash-sidebar {
+    width: 200px;
+    background-color:white;
+    padding: 20px 0;
+    /* border-right: 1px solid #ddd; */
+    height: 100vh;
+    padding-bottom: 0;
+}
+
+.dash-sidebar-list {
+    padding-top: 145px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+    /* padding-left: 10px; */
+    height: 100%;
+    position: relative;
+}
+
+.side-btn {
+    padding: 12px 18px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+    border-left: 4px solid transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #f1f1f1;
+
+}
+
+.side-btn:hover {
+    background-color: #a5e9ff;
+    /* border-left: 4px solid #007bff; */
+}
+
+.side-btn.active {
+    font-weight: bold;
+    /* background-color: #f4f4f4; */
+    border-bottom: 4px solid #55a3ba;
+    color:#1d85a4;
+}
+
+.Side-btn {
+    padding: 12px 18px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+    border-left: 4px solid transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    height: 70px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid white;
+}
+
+.Side-btn:hover {
+    background-color: #a5e9ff;
+    /* border-left: 4px solid #007bff; */
+}
+
+.Side-btn.active {
+    font-weight: bold;
+    background-color: #f4f4f4;
+    border-bottom: 4px solid #55a3ba;
+    color: #1d85a4;
+}
+
+.Logout-btn{
+    padding: 12px 18px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+    border-left: 4px solid transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    height: 70px;
+    /* background-color: #f1f1f1;    */
+
+    width: 100%;
+}
+
+.Logout-btn:hover {
+    font-weight: bold;
+    background-color: #f4f4f4;
+    /* border-bottom: 4px solid #55a3ba; */
+    color: #55a3ba;
+}
+/* 
+.home-page {
+    height: 100vh; */
+    /* background-image: url('C:\Users\ZY LAPTOP\Desktop\HateSpeechProject\Client\hate_speech_detection\src\Assets\OBSSR-2023_NIH-Health-Impacts-Workshop_Carousel_V4_480x320_Graphic.jpg'); Remplacez par le chemin de votre image */
+    /* background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  /* .content {
+    text-align: center;
+  } */
+  
+  /* input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+   */

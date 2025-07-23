@@ -1,0 +1,157 @@
+.help-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .help-container h1 {
+    font-size: 36px;
+    color: #379492;
+    margin-bottom: 30px;
+  }
+  
+  .search-filter-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    background: #eee;
+    border-radius: 6px;
+    padding: 10px 15px;
+  }
+  
+  .search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  .search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .add-button {
+    background: #eee;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .main-section {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .posts-section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post-card {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .post-card img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .post-content {
+    flex: 1;
+  }
+  
+  .post-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .post-body {
+    font-size: 16px;
+    color: #222;
+  }
+  
+  .post-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .filter-section {
+    flex: 1;
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 15px;
+    height: fit-content;
+  }
+  
+  .filter-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .filter-section .filter-option {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+  }
+  
+  .pagination button {
+    border: none;
+    background-color: #eee;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .pagination .active {
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,156 @@
+
+.edit-profile-container {
+    width: 90%;
+    /* margin-block: 40px ; */
+    margin-inline: 90px;
+    padding: 20px;
+    background: #ededed;
+    border-radius: 45px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    height:75%;
+    padding-inline: 75px;
+  }
+  
+  .profile-image-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+  
+  .edit-profile-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+  }
+  
+  .camera-icon {
+    position: absolute;
+    bottom: 5px;
+    right: -10px;
+    background-color:#8cccc9;
+    color: white;
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid white; */
+  }
+  
+  .profile-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+    padding-inline: 100px;
+    padding-inline-end: 150px;
+    height: 100%;
+  }
+  
+  .profile-form label {
+    font-size: 21px;
+    color: #333;
+  }
+  
+  .profile-form input {
+    border: none;
+    width: 100%;
+    border-bottom: 1.5px solid #000;
+    padding: 5px;
+    background: transparent;
+    outline: none;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .edit-form-buttons {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .edit-save-button,
+  .edit-cancel-button {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    background-color:#8cccc9;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  .edit-cancel-button {
+    background-color:#8cccc9;
+  }
+  .edit-section-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .camera-icon {
+    transition: background-color 0.3s ease;
+  }
+  .camera-icon:hover {
+    background-color: #68b5ae;
+  }
+  .edit-save-button:hover,
+  .edit-cancel-button:hover {
+    filter: brightness(0.95);
+  }
+  
+  .input-group {
+    position: relative;
+    margin-top: 28px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    background: transparent;
+    outline: none;
+  }
+  
+  .input-group label {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    font-size: 21px;
+  }
+  
+  .input-group input:focus ~ label,
+  .input-group input:not(:placeholder-shown) ~ label {
+    top: -15px;
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .input-group .eye-icon {
+    position: absolute;
+    right: -8px;
+    top: 10px;
+    cursor: pointer;
+    color: #555;
+    width: 20px;
+    height: 20px;
+  }
+  

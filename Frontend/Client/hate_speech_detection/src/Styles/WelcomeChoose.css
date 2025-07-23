@@ -1,0 +1,167 @@
+/* .welcome-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 30, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .welcome-modal {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .welcome-modal h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: black;
+  }
+
+  
+  .welcome-modal p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .signup-btn,
+  .guest-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .signup-btn {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .guest-btn {
+    background-color: #95a5a6;
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+   */
+
+   .welcome-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 25, 25, 0.8); /* dark translucent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+  }
+  
+  .welcome-modal {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    padding-bottom: 10px;
+    width: 600px;
+    height: 400px;
+    text-align: left;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .modal-title {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333;
+    display: flex
+;
+    align-items: center;
+    margin-bottom: 46px;
+}
+  
+  .modal-highlight {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .modal-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 22px;
+    color: #444;
+    display: block;
+  }
+  
+  .modal-features li {
+    margin-bottom: 15px;
+  }
+  
+  .modal-secondary {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 35px;
+  }
+  
+  .welcome-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .signup-btn,
+  .guest-btn {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-btn {
+    background: #55a3ba;
+    color: white;
+  }
+  
+  .signup-btn:hover {
+    background: #448396;
+  }
+  
+  .guest-btn {
+    background: #ddd;
+    color: #333;
+  }
+  
+  .guest-btn:hover {
+    background: #ccc;
+  }
+  

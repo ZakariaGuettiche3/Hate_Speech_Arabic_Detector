@@ -1,0 +1,215 @@
+/* .history-container {
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .history-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .history-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .history-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .history-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+  }
+  
+  .platform {
+    background-color: #f0f0f0;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+  
+  .date {
+    color: #999;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .video-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .video-link:hover {
+    text-decoration: underline;
+  }
+  
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .hate-rate {
+    margin-top: 5px;
+    font-weight: 600;
+    color: #d9534f;
+  }
+  
+  .no-history {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #777;
+  }
+  
+   */
+
+   .history-container {
+    /* max-width: 900px; */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 120px;
+    width: 95%;
+  }
+  
+  .history-container h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .empty {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .history-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      width: 100%;
+  
+  }
+  
+  .history-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: 0.3s ease;
+    border-left: 6px solid #ccc;
+    width: 100%;
+  }
+  
+  .history-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .text-block {
+    max-width: 70%;
+  }
+  
+  .text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .prediction {
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .prediction.hate {
+    background-color: #ffe6e6;
+    color: #c0392b;
+  }
+  
+  .prediction.normal {
+    background-color: #e6ffe6;
+    color: #2ecc71;
+  }
+  
+  .meta {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  
+  .date {
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .meta button {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .meta button:hover {
+    color: #e74c3c;
+  }
+  
+  .history-category {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .prediction-category {
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    background-color:#e6c5f3;
+    color: #332424;
+  }

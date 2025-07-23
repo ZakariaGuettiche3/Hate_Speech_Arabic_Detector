@@ -1,0 +1,85 @@
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #f0f0f0;
+    padding: 30px 40px;
+    border-radius: 30px;
+    width: fit-content;
+    gap: 30px;
+  }
+  
+  .profile-left {
+    position: relative;
+  }
+  
+  .profile-img-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 75px;
+    margin-left: 60px;
+
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .camera-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #87c4c4;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .camera-btn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .profile-info {
+    /* align-items: center; */
+    justify-content: start;
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 28px;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    padding-inline: 40px;
+    padding-inline-end: 150px;
+    height: 100%;
+  }
+
+  .profile-info p{
+    margin-block: 10px;
+  }
+  
+  .edit-btn {
+    /* flex: 1; */
+    align-self: flex-end;
+    padding: 15px 22px;
+    border: none;
+    background-color:#8cccc9;
+    color: white;
+    border-radius: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 21px;
+    margin-top: 50px;
+  }
+  
+  .edit-btn:hover {
+    background-color: #73b0b0;
+  }
+  

@@ -1,0 +1,96 @@
+.roadmap-container {
+    /* background-color: #f7f7f7; */
+    /* padding: 40px; */
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color:  #ededed;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .roadmap-container h2 {
+    margin-top: 150px; 
+    color:  #5ca19e;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .roadmap-section {
+    margin-bottom: 30px;
+    padding-inline: 80px;
+  }
+  
+  .roadmap-section-header {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #555;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .roadmap-section-header::before,
+  .roadmap-section-header::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #999;
+    margin: 0 10px;
+  }
+  
+  .tags {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    gap: 85px;
+    margin-top: 10px;
+    /* position: relative; */
+  }
+  
+  .roadmap-tag {
+    position: relative;
+    /* background-color: #a3d7d1;
+    color: #2f4f4f; */
+    padding-inline-start: 17px;
+    padding-inline-end: 20px;
+    padding-block: 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;        
+    min-width: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .roadmap-tag.color-1 {
+    background-color: #8cccc9c4; 
+    
+  }
+  .roadmap-tag.color-2 {
+    background-color: #567f7d71; 
+   
+  }
+  
+  .roadmap-tag:hover {
+    background-color: #8ec7be;
+    transform: scale(1.05);
+  }
+  
+  .bookmark-icon {
+
+    /* margin-top: 8px; */
+    position: absolute;
+    right: 11px;
+    top: 7px;
+    /* font-size: 16px; */
+  }
+  

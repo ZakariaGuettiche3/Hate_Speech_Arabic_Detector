@@ -1,0 +1,46 @@
+/* *{
+    font-family: 'Poppins', sans-serif !important;
+}
+.navigation_bar .collapse{
+    background-color: #83c3c0 !important;
+}
+.navigation_bar {
+  
+    background-color: #83c3c0 !important;
+    height: fit-content;
+    border-radius: 130px;
+    max-height: fit-content;
+}
+.navigation_bar .navTitle{
+    color: white !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: medium;
+   
+}
+.navigation_bar .login{
+    background-color: white;
+    color: #83c3c0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size:medium;
+    border: none !important;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+/* Remove the default Bootstrap dropdown icon */
+/* .navbar .dropdown-toggle::after {
+    display: none !important;
+  }
+
+  .navigation_bar .dropdown-menu .dropdown-item {
+    border-radius: 0px !important; /* Set your desired radius */
+    /* font-weight: 600;
+    color: #5ca19e;
+    padding: 10px 20px;
+   
+    transition: background 0.3s ease;
+  }
+  
+ 
+   */
